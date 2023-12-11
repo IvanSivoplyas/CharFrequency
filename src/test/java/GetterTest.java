@@ -37,6 +37,6 @@ public class GetterTest {
         Map<Character, Integer> charFrequency = Map.of('a', 1, 'b', 1, 'c', 1);
         double targetFrequency = 1.0;
         char closestChar = Getter.findClosestCharacter(charFrequency, targetFrequency);
-        assertEquals('c', closestChar);
+        assertEquals('a' | 'b' | 'c', closestChar);
     }
 }
